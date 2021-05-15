@@ -46,3 +46,4 @@ gem "sass-rails"
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 gem "versionist"
 gem "web-console", github: "insomenia-seongjun/web-console"
+gem "rb-readline", "~> 0.4.2"

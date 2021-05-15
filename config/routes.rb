@@ -12,16 +12,16 @@ Rails.application.routes.draw do
   end
 
   devise_for :users,
-             path: "",
-             path_names: {
-               sign_in: "login",
-               sign_out: "logout",
-               registration: "signup"
-             },
-             controllers: {
-               sessions: "users/sessions",
-               registrations: "users/registrations"
-             }
+            path: "",
+            path_names: {
+              sign_in: "login",
+              sign_out: "logout",
+              registration: "signup"
+            },
+            controllers: {
+              sessions: "users/sessions",
+              registrations: "users/registrations"
+            }
 
   resources :categories
   resources :items
