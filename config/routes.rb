@@ -22,7 +22,7 @@ Rails.application.routes.draw do
               sessions: "users/sessions",
               registrations: "users/registrations"
             }
-
+  resource :users
   resources :categories
   resources :items
   resources :images do
