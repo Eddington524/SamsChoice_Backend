@@ -34,7 +34,7 @@ class ItemsController < ApiController
   private
 
   def item_params
-    params.require(:item).permit(:name, :price, :category_id)
+    params.require(:item).permit(:name, :price, :category_id, :image)
   end
 
   def set_item

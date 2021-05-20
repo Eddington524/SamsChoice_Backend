@@ -24,6 +24,12 @@ Rails.application.routes.draw do
             }
   resource :users
   resources :categories
+
+  # devise_for :items,
+  #           path:"",
+  #           path_names:{
+  #           itemlist:"itemlist"
+  #           }
   resources :items
   resources :images do
     post :dropzone, on: :collection
