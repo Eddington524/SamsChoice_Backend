@@ -26,13 +26,9 @@ Rails.application.routes.draw do
   resources :categories
   get'/items/category/:id' => 'items#category_item'
   
-  # devise_for :items,
-  #           path:"",
-  #           path_names:{
-  #           itemlist:"itemlist"
-  #           }
   resources :posts
   resources :items
+
   resources :images do
     post :dropzone, on: :collection
   end
