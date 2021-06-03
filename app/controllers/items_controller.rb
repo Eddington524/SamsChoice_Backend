@@ -33,7 +33,11 @@ class ItemsController < ApiController
 
   def category_item
     category_items = Item.where(category_id: params[:id])
-    render json: category_items
+    category_data = Category.where(id: params[:id])
+    render json: {
+      category_items: category_items,
+      category_data: category_data
+    }
   end
 
   private
